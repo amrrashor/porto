@@ -1,0 +1,32 @@
+@import '/src/styles/helpers/variables';
+
+.sign-up {
+    background-image: url('./../../assets/imgs/img-3.jpg');
+}
+
+.sign-up-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px;
+    margin:50px 0;
+}
+
+.map-wrapper {
+    width:90%;
+    margin-right: 10px;
+}
+
+.form-wrapper {
+    width:100%;
+    
+}
+
+@media screen and (max-width:992px) {
+    .sign-up-wrapper {
+        flex-direction: column;
+    }
+    .form-wrapper {
+        margin-top:20px;
+    }
+}

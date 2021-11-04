@@ -1,0 +1,87 @@
+@import '/src/styles/helpers/variables';
+
+.single-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin:2rem;
+}
+
+.cards__item__link {
+    height: 100%;
+    margin:20px;
+    width:22%;
+    box-shadow: $bx-sh;
+    text-decoration: none;
+    color:$secondry;
+    border-radius: $first-brdr-r;
+    overflow: hidden;
+    &:hover .cards__item__img {
+        transform: scale(1.1);
+    }
+}
+
+.cards__item__pic-wrap {
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    width: 100%;
+    padding-top: 67%;
+}
+
+.cards__item__pic-wrap::after {
+    content: attr(data-category);
+    position: absolute;
+    bottom: 0;
+    margin-left: 10px;
+    padding: 6px 8px;
+    max-width: calc((100%) - 60px);
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+    background-color: #1f98f4;
+    box-sizing: border-box;
+}
+
+.cards__item__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: $transition;
+}
+
+.cards__item__info {
+    padding: 20px 30px 30px;
+}
+
+.cards__item__text {
+    line-height: 24px;
+    font-size: $first-fz;
+}
+
+@media screen and (max-width:1200) {
+    .cards__item__link {
+        width:55%;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .cards__item__link {
+        width:40%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .single-card {
+        flex-direction: column;
+    }
+    .cards__item__link {
+        width:70%;
+    }
+}

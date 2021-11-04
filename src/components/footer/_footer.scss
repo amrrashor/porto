@@ -1,0 +1,84 @@
+@import './../../styles/helpers/variables';
+
+.footer-container {
+    background:$main-bg;
+    padding: 4rem 0 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.footer-subscription{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-subscription-heading {
+    color:$primary;
+    text-transform: capitalize;
+    margin: 10px 0;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-input {
+    padding:10px 10px;
+    width: 400px;
+    border: none;
+    outline: none;
+    border-radius: $first-brdr-r;
+    margin:20px 0;
+}
+::placeholder {
+    font-family: 'PT Sans', sans-serif;
+    text-transform: capitalize;
+}
+
+.footer-input .btn--outline {
+    padding:10px
+}
+
+.footer-link-items {
+    display: flex;
+    margin-top:30px;
+}
+
+.single-item {
+    margin: 20px;
+    color:$primary;
+    text-transform: capitalize;
+    font-size: $first-fz;
+}
+
+.categories {
+    color:$primary;
+    text-decoration: none;
+}
+
+.social {
+    margin:20px 0
+}
+
+.social-icon {
+    color:$primary;
+    margin:0 10px;
+}
+
+small {
+    color:$primary;
+}
+@media screen and (max-width:768px) {
+    .footer-subscription-heading {
+        font-size: $first-fz;
+    }
+}
+

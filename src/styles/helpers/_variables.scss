@@ -1,0 +1,44 @@
+//colors
+$primary:#fff;
+$secondry:#242424;
+$transparent: transparent;
+$blk:#000;
+
+//paddings and margins
+$md-btn-padding: 8px 20px;
+$lg-btn-padding: 12px 26px;
+
+//borders
+$btn-border:1px solid $primary;
+$btn-border-2:1px solid $blk;
+
+//font size
+$first-fz:1.1rem;
+$second-fz:1.4rem;
+$third-fz:1.8rem;
+$fourth-fz:2rem;
+$fifth-fz:2.5rem;
+$sixth-fz:4.3rem;
+
+//font weight
+$fw-bold:700;
+
+//z-index
+$zi-neg:-1;
+$zi-1:1;
+$zi-2:10;
+$zi-3:100;
+
+//border radius
+$first-brdr-r:10px;
+
+//transition
+$transition:all 0.4s ease-out;
+
+//box shadow
+$bx-sh:0 10px 12px rgba(0,0,0,0.5);
+$bx-sh-2:inset 0 0 0 1000px rgba(0,0,0,0.2);
+$bx-sh-3: 0 8px 10px rgba(0,0,0,0.3);
+
+//background color
+$main-bg: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);

@@ -1,0 +1,16 @@
+@import '/src/styles/helpers/variables';
+
+.formbtn {
+    padding:20px 20px;
+    margin:10px;
+    width:100%;
+    border-radius: $first-brdr-r;
+    outline: none;
+    color:$primary;
+    background-color: $secondry;
+    box-shadow: $bx-sh-3;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: $first-fz;
+}

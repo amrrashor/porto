@@ -1,0 +1,20 @@
+@import "/src/styles/helpers/variables";
+
+.form-container {
+    box-shadow: $bx-sh-3;
+    // width: 100%;
+    height: 100%;;
+    border-radius: $first-brdr-r;
+    margin:10px;
+    padding:35px;
+}
+
+input {
+    border: $btn-border-2;
+    margin:10px 0;
+    outline: none;
+    padding:30px 5px;
+    font-size: $first-fz;
+    width: 100%;
+    border-radius: $first-brdr-r;
+}
